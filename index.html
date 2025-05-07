@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>link</title>
+  <script>
+    window.location.href = location.pathname;
+  </script>
+</head>
+<body>
+  <p>If you're not redirected, click <a id="link" href="#">here</a>.</p>
+  <script>
+    document.getElementById('link').href = location.pathname;
+  </script>
+</body>
+</html>
