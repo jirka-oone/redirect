@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>link</title>
   <script>
+    if (location.search?.includes("debug")){
+        return;
+    }
     window.location.href = location.pathname.substring(1);
   </script>
 </head>
