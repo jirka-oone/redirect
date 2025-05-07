@@ -11,7 +11,7 @@
   <p>If you're not redirected, click <a id="link" href="#">here</a>.</p>
   <script>
     console.log('location.pathname', location)
-    document.getElementById('link').href = location.pathname;
+    document.getElementById('link').href = location.pathname.substring(1);
   </script>
 </body>
 </html>
