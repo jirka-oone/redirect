@@ -5,7 +5,9 @@
   <title>link</title>
   <script>
     if (!location.search?.includes("debug")){
-        window.location.href = location.pathname.substring(1);
+        var pathName = location.pathname.substring(1)
+        var search = location.search
+        window.location.href = pathName+search;
     }
   </script>
 </head>
@@ -13,7 +15,9 @@
   <p>If you're not redirected, click <a id="link" href="#">here</a>.</p>
   <script>
     console.log('location.pathname', location)
-    document.getElementById('link').href = location.pathname.substring(1);
+    var pathName = location.pathname.substring(1)
+    var search = location.search
+    document.getElementById('link').href = pathName+search;
   </script>
 </body>
 </html>
